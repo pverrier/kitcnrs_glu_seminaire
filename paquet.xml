@@ -1,0 +1,16 @@
+<paquet
+  prefix="kitcnrs_glu_seminaire"
+  categorie="outil"
+  version="0.1.0"
+  etat="stable"
+  logo="images/icone-plugin.png"
+  documentation="http://www.harmoweb.cnrs.fr/spip.php?article261"
+  compatibilite="[3.0.0;3.0.*]"
+>
+  <nom>Kit CNRS -glu- Séminaire</nom>
+  <auteur lien="http://contrib.spip.net/Amaury-Adon">Amaury Adon</auteur>
+  <auteur lien="http://contrib.spip.net/pverrier">Pascal Verrier</auteur>
+  <credit lien="http://www.harmoweb.cnrs.fr">CNRS Direction de la Communication</credit>
+  <necessite nom="kitcnrs" compatibilite="[5.3.13;5.3.*]" />
+  <necessite nom="seminaire" compatibilite="[2.1.12;2.1.*]" />
+</paquet>

@@ -1,0 +1,9 @@
+[(#REM) Affichage du chemin (fil d'Ariane) de la page "jour" (événements d'une journée)
+  --
+  Paramètres: tout l'environnement (voir squelette de structure du Kit labos), et en particulier:
+  - date: date pour laquelle on affiche les événements
+  --
+  Utilisé par inc/inc-chemin.html du Kit labos
+]
+[&gt; <a href="(#URL_PAGE{calendrier}|parametre_url{date_debut,#DATE|affdate{Y-m-01}})"><:seminaire:titre_agenda:></a>]
+[&gt; (#ENV{date}|affdate)]
