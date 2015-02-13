@@ -1,11 +1,7 @@
-[(#REM) Contenu de page calendrier
+[(#REM) Page calendrier (squelette principal)
 --
   Paramètres:
-  - type_page=calendrier
-  - date_debut : (optionnel) date Y-m-01 indiquant le mois pour lequel afficher le calendrier
-  - env : toutes les variables d'environnement
---
-  Utilisé par: squelette principal calendrier.html, via structure.html de la charte active (kitcnrs)
+  - date_debut : (optionnel) date (format "Y-m-01") indiquant le mois pour lequel afficher le calendrier
 ]
 [(#REM) Si date_debut n'est pas défini (ex: accès via une redirection "?page=calendrier"), on met par défaut le mois en cours]
-<INCLURE{fond=contenu/page-agenda, date_debut=#ENV{date_debut,#DATE|affdate{Y-m-01}}, env}>
+<INCLURE{fond=css/charte-#CONFIG{kitcnrs/charte,1}/structure, type_page=calendrier, date_debut=#ENV{date_debut,#DATE|affdate{Y-m-01}}, env}>
