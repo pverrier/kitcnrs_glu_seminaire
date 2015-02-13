@@ -1,9 +1,10 @@
 [(#REM) Contenu de page calendrier
 --
   Paramètres:
-  - type_page=calendrier
+  - type_page="calendrier"
+  - date_debut : date (format "Y-m-01") indiquant le mois pour lequel afficher le calendrier
   - env : toutes les variables d'environnement
 --
   Utilisé par: squelette principal calendrier.html, via structure.html de la charte active (kitcnrs)
 ]
-<INCLURE{fond=contenu/page-agenda}{env}>
+<INCLURE{fond=contenu/page-agenda, env}>
